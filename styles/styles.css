@@ -1,8 +1,39 @@
 .container {
+    min-height: 100vh;
     display: grid;
-    width: 100%;
-    grid-template-columns: auto 1fr;
+    width: 100vw;
+    grid-template-columns: 30px 1fr 30px;
     font-size: 1.5em;
-    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: black;
+    grid-gap: 10px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header   header   header"
+    "advert   content  content"
+    "footer   footer   footer" ;
+}
 
-} 
+.advert {
+    background: orangered;
+    grid-area: advert;
+}
+
+.header {
+
+    background: orchid;
+    grid-area: header;
+
+}
+
+.content {
+    background: brown;
+    grid-area: content;
+}
+
+.footer {
+    background: palegoldenrod;
+    grid-area: footer;
+
+}
+
